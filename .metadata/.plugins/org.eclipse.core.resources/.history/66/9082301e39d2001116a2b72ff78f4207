@@ -1,0 +1,141 @@
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.KeyEventDispatcher;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+
+public class Gui implements ActionListener, KeyEventDispatcher
+{
+	public static final int WIDTH = 500;
+	public static final int HEIGHT = 500;
+	public static final int MAX_FIELD_DISP= 60;
+	public static final int MAX_AREA_H=50;
+	public static final int MAX_AREA_L=50;
+	public static final String AREA_INTRO = "Current data is\n\n";
+	public static final String AREA_INPUT = " accepted";
+	
+	private JTextField studentSelect = new JTextField(MAX_FIELD_DISP);
+	private JTextField data = new JTextField(MAX_FIELD_DISP);
+	private JTextField numberField = new JTextField(3);
+	private JTextArea studentDisplay = new JTextArea(MAX_AREA_H,MAX_AREA_L);
+	
+	private JButton newStudent = new JButton("Create new Student report");
+	private JButton loadStudent = new JButton("Load Student report");
+	private JButton deleteStudent = new JButton("Delete Student report");
+	private JButton addTests = new JButton("Click to add test scores to report");
+	
+	private Student currentS;
+	private int number;
+	private KeyEvent key;
+	
+	public boolean dispatchKeyEvent(KeyEvent key)
+	{
+			if (key.getKeyCode() == KeyEvent.VK_ENTER)
+				return true;
+			else
+				return false;
+	}
+	
+	
+	private ActionListener nameListener = new ActionListener()
+	{ public void actionPerformed(ActionEvent e)
+		{
+			studentDisplay.setText("");
+			String input = null;
+			data.setText("");
+			do 
+			{
+				input = data.getText().trim();
+			}while (!dispatchKeyEvent(key)); // this keeps getting stuff from data field until enter is pressed
+		
+			if (input.length() > 0)
+			{
+				currentS.nameInput(input);
+				studentDisplay.setText(input + AREA_INPUT);
+			}
+		}
+	};
+	
+	private ActionListener numberListener = new ActionListener()
+	{ public void actionPerformed(ActionEvent e)
+		{
+			studentDisplay.setText("");
+			
+			String input = numberField.getText().trim(); // this can only be called from a TextField
+			numberField.setText("");
+			
+			if (input.length() >0)
+			{
+				number = Integer.parseInt(input);
+				studentDisplay.setText(input + AREA_INPUT);
+			}
+				
+		}	
+				
+	};
+	
+	public Gui(Student param) 
+	{
+		currentS = param;
+	}
+	
+	public void run()
+	{
+		JPanel window = new JPanel();
+		window.add(new JLabel("Student Reporter "));
+		window.add(newStudent);
+		window.add(loadStudent);
+		window.add(deleteStudent);
+		window.add(studentSelect);
+		window.add(data);
+		window.add(addTests);
+		window.add(numberField);
+		JFrame frame = new JFrame("Student Report Creator");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container contentPane = frame.getContentPane();
+
+		newStudent.addActionListener(this);
+		newStudent.setActionCommand("N"); // N for new
+		
+		loadStudent.addActionListener(this);
+		loadStudent.setActionCommand("L"); // L for load
+		
+		deleteStudent.addActionListener(this);
+		deleteStudent.setActionCommand("D"); // D for delete		
+		
+		addTests.addActionListener(this);
+		addTests.setActionCommand("T"); // T for Tests		
+		data.setText("When needed, enter the appropriate data into here");
+		studentSelect.setText("When you click a button I will provide some instructions");
+		contentPane.add(window, BorderLayout.CENTER);
+		frame.setSize(WIDTH, HEIGHT);
+		frame.pack();
+		frame.setLocationRelativeTo(null);
+		frame.setVisible(true);
+	}
+
+	public void actionPerformed(ActionEvent e) 
+	{
+		if (e.getActionCommand() == "N") // this is for new student
+		{
+			studentSelect.setText("Enter name into Field below");
+			data.setText("");
+			data.requestFocusInWindow();
+			data.addActionListener(nameListener);
+			
+		}
+		if (e.getActionCommand() == "L")
+		
+	}
+	
+	
+}

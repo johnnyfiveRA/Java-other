@@ -1,0 +1,11 @@
+
+public class input {
+	// this class will take input from user and then print what they input.
+	import java.util.Scanner
+	
+	public static void main(String[] args) {
+		int x=0;
+		System.out.println("Hello type in a number\n")
+		
+
+}

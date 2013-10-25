@@ -1,0 +1,63 @@
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+
+public class Gui extends JFrame implements ActionListener 
+{
+	public static final int WIDTH = 500;
+	public static final int HEIGHT = 500;
+	public static final int MAX_FIELD_DISP= 30;
+	public static final int MAX_AREA_DISP=100;
+	public static final String AREA_INTRO = "Current data is\n\n";
+	
+	private JTextField studentSelect;
+	private JTextField data;
+	private JTextArea  studentDisplay;
+	
+	public void Gui()
+	{
+		setSize(WIDTH, HEIGHT);
+		Container contentPane = getContentPane();
+		contentPane.setLayout(new FlowLayout());
+		
+		JButton newStudent = new JButton("Create new Student report");
+		newStudent.addActionListener(this);
+		contentPane.add(newStudent);
+		
+		JButton loadStudent = new JButton("Load Student report");
+		newStudent.addActionListener(this);
+		contentPane.add(loadStudent);
+		
+		JButton deleteStudent = new JButton("Delete Student report");
+		deleteStudent.addActionListener(this);
+		contentPane.add(deleteStudent);
+		
+		JButton addTests = new JButton("Click to add test scores to report");
+		addTests.addActionListener(this);
+		contentPane.add(addTests);
+		
+		studentSelect = new JTextField (MAX_FIELD_DISP);
+		contentPane.add(studentSelect);
+		studentSelect.addActionListener(this);
+		
+		data = new JTextField (MAX_FIELD_DISP);
+		contentPane.add(data);
+		data.addActionListener(this);
+		data.setText("When needed, enter the appropriate data into here");
+		
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+	
+	
+}

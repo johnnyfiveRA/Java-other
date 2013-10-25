@@ -1,0 +1,10 @@
+
+public class StudentDemo
+{
+    public static void main (String[]args)
+    {
+        Student S = new Student();
+    	Gui run = new Gui(S);
+        run.setVisible(true);
+    }
+}

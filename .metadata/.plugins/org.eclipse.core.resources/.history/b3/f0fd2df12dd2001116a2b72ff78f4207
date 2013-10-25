@@ -1,0 +1,115 @@
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+
+public class Gui extends JFrame implements ActionListener 
+{
+	public static final int WIDTH = 500;
+	public static final int HEIGHT = 500;
+	public static final int MAX_FIELD_DISP= 30;
+	public static final int MAX_AREA_H=50;
+	public static final int MAX_AREA_L=50;
+	public static final String AREA_INTRO = "Current data is\n\n";
+	public static final String AREA_INPUT = " accepted";
+	
+	public JTextField studentSelect;
+	public JTextField data;
+	public JTextField numberField;
+	public JTextArea  studentDisplay;
+	
+	private Student currentS;
+	private int number;
+	
+	private ActionListener nameListener = new ActionListener()
+	{ public void actionPerformed(ActionEvent e)
+		{
+			studentDisplay.setText("");
+			String input =data.getText().trim();
+			data.setText("");
+			if (input.length() > 0)
+			{
+				currentS.nameInput(input);
+				studentDisplay.append(input + AREA_INPUT);
+			}
+		}
+	};
+	
+	private ActionListener numberListener = new ActionListener()
+	{ public void actionPerformed(ActionEvent e)
+		{
+			studentDisplay.setText("");
+			String input = numberField.getText().trim(); // this can only be called from a TextField
+			numberField.setText("");
+			
+			if (input.length() >0)
+			{
+				int number = Integer.parseInt(input);
+			}
+				
+		}	
+				
+	};
+	
+	public void Gui(Student param)
+	{
+		Student currentS = param;
+	}
+	
+	public void run()
+	{
+		setSize(WIDTH, HEIGHT);
+		Container contentPane = getContentPane();
+		contentPane.setLayout(new FlowLayout());
+		
+		JButton newStudent = new JButton("Create new Student report");
+		newStudent.addActionListener(this);
+		newStudent.setActionCommand("N"); // N for new
+		contentPane.add(newStudent);
+		
+		JButton loadStudent = new JButton("Load Student report");
+		newStudent.addActionListener(this);
+		loadStudent.setActionCommand("L"); // L for load
+		contentPane.add(loadStudent);
+		
+		JButton deleteStudent = new JButton("Delete Student report");
+		deleteStudent.addActionListener(this);
+		deleteStudent.setActionCommand("D"); // D for delete
+		contentPane.add(deleteStudent);
+		
+		JButton addTests = new JButton("Click to add test scores to report");
+		addTests.addActionListener(this);
+		addTests.setActionCommand("T"); // T for Tests
+		contentPane.add(addTests);
+		
+		studentSelect = new JTextField (MAX_FIELD_DISP);
+		contentPane.add(studentSelect);
+		studentSelect.addActionListener(this);
+		
+		data = new JTextField (MAX_FIELD_DISP);
+		contentPane.add(data);
+		data.setText("When needed, enter the appropriate data into here");
+		
+	}
+
+	public void actionPerformed(ActionEvent e) 
+	{
+		if (e.getActionCommand() == "C") // this is for creating student
+		{
+			studentSelect.setText("Enter name into Field below");
+			data.setText("");
+			data.addActionListener(nameListener);
+		}
+		
+		
+	}
+	
+	
+}

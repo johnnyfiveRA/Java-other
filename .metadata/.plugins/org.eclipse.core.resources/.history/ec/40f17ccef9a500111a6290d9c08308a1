@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class input {
+	// this class will take input from user and then print what they input.
+	
+	
+	public static void main(String[] args) {
+		int x=0;
+		String y; // for string input
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Hello type in a whole number\n");
+		x=keyboard.nextInt(); // get a number
+		System.out.println("\nThe number you typed was " + x); // this is how you add other things into the command lol
+		System.out.println("\n Very nice now enter a word or name");
+		y = keyboard.next()+keyboard.next(); // get one word from the user stops at white space
+		System.out.println("\n You typed " + y);
+		System.out.println("\n\n Goodbye");
+	}
+
+}

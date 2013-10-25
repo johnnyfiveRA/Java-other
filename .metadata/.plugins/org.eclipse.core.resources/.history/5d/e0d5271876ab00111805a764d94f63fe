@@ -1,0 +1,33 @@
+import java.io.*;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class FileStuff {
+	
+	public static void main(String[] args) throws IOException {
+	FileInputStream in = null;
+	FileOutputStream out = null;
+	Scanner filedata;
+	
+	try 
+	{
+			in = new FileInputStream("/Users/John/desktop/xanadu.txt");
+			out = new FileOutputStream("/Users/John/desktop/outagain.txt");
+			int c;
+			Scanner filedata
+			while ((c = in.read()) != -1)
+				
+			
+	} finally {
+		
+		if (in != null)
+			in.close();
+		
+		if (out != null)
+			out.close();
+		}
+	
+	System.out.println("File copy complete");
+	
+	}
+}

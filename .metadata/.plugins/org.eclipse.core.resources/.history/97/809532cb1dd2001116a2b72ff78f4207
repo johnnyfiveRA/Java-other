@@ -1,0 +1,36 @@
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.IOException;
+
+public class StudentFile extends Student  {
+
+	private static final String EXTENSION = ".srp";
+	
+	private ObjectOutputStream studentOutput = null;
+	private ObjectInputStream studentInput = null;
+	private Student currentS = null;
+	
+	public void StudentFile()
+	{
+		// may not be needed currentS = param; 
+		// WARNNG!! THIS IS PASSED BY REFERENCE. 
+		// OPERATIONS TO THIS OBJECT WITHIN CLASS WILL MODIFY PASSED OBJECT
+	}
+	
+	public boolean loadStu()
+	{
+		try
+		{
+		studentInput = new ObjectInputStream(new FileInputStream(currentS.getName() + EXTENSION));
+		}
+		catch (IOException e)
+		{
+			return false;
+		}
+		
+		currentS = (StudentstudentInput.readObject();
+		
+		return true;
+	}
+}

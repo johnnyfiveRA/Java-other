@@ -1,0 +1,10 @@
+Student name: John
+Student's Grades: 
+
+Test Score 1: 98
+
+Test Score 2: 50
+
+Test Score 3: 100
+
+Average: 82.66666666666667

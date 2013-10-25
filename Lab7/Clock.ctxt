@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Clock()
+comment1.params=h\ m\ s
+comment1.target=Clock(int,\ int,\ int)
+comment10.params=o
+comment10.target=boolean\ equals(java.lang.Object)
+comment2.params=h
+comment2.target=void\ setHour(int)
+comment2.text=\r\n\tValid\ integers\ for\ hour\ is\ in\ the\ range\ of\ 0\ -\ 24\r\n
+comment3.params=m
+comment3.target=void\ setMinute(int)
+comment3.text=\r\n\tValid\ integers\ for\ minute\ is\ in\ the\ range\ 0\ -\ 59\r\n
+comment4.params=s
+comment4.target=void\ setSecond(int)
+comment4.text=\r\n\tValid\ integers\ for\ second\ is\ in\ the\ range\ 0\ -\ 59\r\n
+comment5.params=
+comment5.target=int\ getHour()
+comment6.params=
+comment6.target=int\ getMinute()
+comment7.params=
+comment7.target=int\ getSecond()
+comment8.params=
+comment8.target=java.lang.String\ getCurrentTime()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=11

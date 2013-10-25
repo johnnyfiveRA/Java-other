@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, XMLtestActivity!</string>
+    <string name="app_name">XMLtest</string>
+    <string name="Touch">Touch me to close</string>
+    <string name="dialog_title">Close application</string>
+    <string name="dialog_text">Hit this button to close</string>
+
+</resources>

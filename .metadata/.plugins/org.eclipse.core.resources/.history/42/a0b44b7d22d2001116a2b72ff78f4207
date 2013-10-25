@@ -1,0 +1,81 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.IOException;
+
+public class StudentFile extends Student  {
+
+	private static final String EXTENSION = ".srp";
+	
+	private ObjectOutputStream studentOutput = null;
+	private ObjectInputStream studentInput = null;
+	private Student currentS = null;
+	
+	public void StudentFile(Student param)
+	{
+		currentS = param; 
+		// WARNNG!! THIS IS PASSED BY REFERENCE. 
+		// OPERATIONS TO THIS OBJECT WITHIN CLASS WILL MODIFY PASSED OBJECT
+	}
+	
+	public boolean loadStu()
+	{
+		/* This method loads a student object from a file into memory 
+			it will redirect the pointer from the current Student (currentS) to one 
+			loaded from a file. it returns true if everything works fine and 
+			false if there is an exception that prevents this from happening 
+		*/
+		
+		try
+		{
+		studentInput = new ObjectInputStream(new FileInputStream(currentS.getName() + EXTENSION));
+		}
+		catch (IOException e)
+		{
+			return false;
+		}
+		
+		try 
+		{
+		currentS = (Student)studentInput.readObject();
+		studentInput.close();
+		}
+		catch (Exception e)
+		{
+			return false;
+		}
+		
+		return true; // this signals successful operations of the method
+	}
+	
+	public boolean writeStu()
+	{
+		/* This method will write the student object from memory to a file
+		 * It returns true if it works correctly and false if any exceptions
+		 * prevent this from happening
+		 */
+		
+		try
+		{
+			studentOutput = new ObjectOutputStream(new FileOutputStream(currentS.getName()));
+		}
+		catch(IOException e)
+		{
+			return false;
+		}
+		
+		try 
+		{
+			studentOutput.writeObject(currentS);
+			studentOutput.close();
+		}
+		catch(IOException e)
+		{
+			return false;
+		}
+		
+		return true; // file written successfully
+		
+	}
+}

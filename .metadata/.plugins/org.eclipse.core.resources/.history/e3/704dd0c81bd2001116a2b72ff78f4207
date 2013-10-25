@@ -1,0 +1,64 @@
+import java.io.Serializable;
+import java.util.Scanner;
+
+public class Student implements Serializable
+{
+    private String name;
+    private int[] grade;
+    private double average;
+    private Scanner kb = new Scanner(System.in);
+    
+    public Student()
+    {  
+        name = "No name yet";
+        average = 0;
+    }
+    
+    public void nameInput()
+    {                
+        System.out.print ("Enter student's name: ");
+        name = kb.nextLine();
+    }
+
+    public void gradeInput()
+    {
+        int count = 0;
+        
+        System.out.print ("How many grades for this student? ");
+        count = kb.nextInt();
+        grade = new int[count];
+        
+        for (int i = 0; i < grade.length; i++)
+        {
+            System.out.print ("Enter grade " + (i+1) + ": ");
+            grade[i] = kb.nextInt();
+        }
+        
+    }
+    
+    public double getAverage()
+    {
+        int total = 0;
+        for (int i = 0; i < grade.length; i++)
+        {
+            total = total + grade[i];
+        }
+        average = (double)total/grade.length;
+        return average;
+    }
+    
+    // Make the necessary changes to this method to do the following
+    // 1. Write the student's report to the file "student.txt"
+    // 2. Print a confirmation to the user on the screen
+    public void printReport()
+    {
+        System.out.println ();
+        System.out.println ("Student's name: " + name);
+        System.out.println ("Student's grades:" );
+        for (int i = 0; i < grade.length; i++)
+        {
+           System.out.println (grade[i]);
+        }
+        System.out.println ("Average: " + getAverage());
+    }
+}

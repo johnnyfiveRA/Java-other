@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Student()
+comment1.params=
+comment1.target=void\ nameInput()
+comment2.params=
+comment2.target=void\ gradeInput()
+comment3.params=
+comment3.target=double\ getAverage()
+comment4.params=
+comment4.target=void\ printReport()
+numComments=5
