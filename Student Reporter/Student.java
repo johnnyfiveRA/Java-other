@@ -12,7 +12,7 @@ public class Student implements Serializable
     private int currentTest = 0; // the current test score grabbed from the gui
     private double average; // the computed average
     
-    public static transient Gui UseMe= new Gui(); //instance of Gui that will be displayed to user.
+    public static transient Gui UseMe= new Gui(); //instance of Gui that will be displayed to user. This doesn't need to be here. 
     
     
     // end of fields

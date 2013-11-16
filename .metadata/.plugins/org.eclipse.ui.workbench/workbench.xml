@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
-<window height="693" maximized="true" width="849" x="264" y="13">
+<window height="728" maximized="true" width="683" x="683" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -11,19 +11,19 @@
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="61" y="22"/>
-<coolItem id="adt.actionSet.lint" itemType="typeToolBarContribution" x="50" y="22"/>
-<coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="85" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="124" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="74" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="74" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="109" y="22"/>
+<coolItem id="adt.actionSet.lint" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="185" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -37,19 +37,21 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Gui.java" partName="Gui.java" path="C:/Users/John/Java Workspace/Student Reporter/Gui.java" title="Gui.java" tooltip="Student Reporter/Gui.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Student Reporter/Gui.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2011" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="C:/Users/John/Java Workspace/Restart/src/com/JTW/restart/MainActivity.java" title="MainActivity.java" tooltip="Restart/src/com/JTW/restart/MainActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Restart/src/com/JTW/restart/MainActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1069" selectionTopPixel="218"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DisplayMessageActivity.java" partName="DisplayMessageActivity.java" path="C:/Users/John/Java Workspace/Restart/src/com/JTW/restart/DisplayMessageActivity.java" title="DisplayMessageActivity.java" tooltip="Restart/src/com/JTW/restart/DisplayMessageActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Restart/src/com/JTW/restart/DisplayMessageActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="735" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
-<viewState/>
-</view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
@@ -58,7 +60,7 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<columnWidths org.eclipse.ui.ide.locationField="75" org.eclipse.ui.ide.markerType="75" org.eclipse.ui.ide.pathField="100" org.eclipse.ui.ide.resourceField="75" org.eclipse.ui.ide.severityAndDescriptionField="705"/>
+<columnWidths org.eclipse.ui.ide.locationField="52" org.eclipse.ui.ide.markerType="202" org.eclipse.ui.ide.pathField="67" org.eclipse.ui.ide.resourceField="75" org.eclipse.ui.ide.severityAndDescriptionField="705"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -112,7 +114,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -123,10 +125,6 @@
 <alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
-<alwaysOnActionSet id="adt.actionSet.wizards"/>
-<alwaysOnActionSet id="adt.actionSet.refactorings"/>
-<alwaysOnActionSet id="adt.actionSet.avdManager"/>
-<alwaysOnActionSet id="adt.actionSet.lint"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
@@ -207,8 +205,8 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.2801205" ratioLeft="372" ratioRight="956" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.7003257" ratioLeft="430" ratioRight="184" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.22364458" ratioLeft="297" ratioRight="1031" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.8192771" ratioLeft="476" ratioRight="105" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -282,7 +280,7 @@
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" removed="true"/>
 <fastViewBars/>
 <layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
@@ -336,165 +334,123 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Student Reporter/Student.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Student Reporter/Gui.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Student Reporter/StudentDemo.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Student Reporter/StudentFile.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Student Reporter/StudentAction.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Student Reporter/StudentDemo.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Student Reporter/Student.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Base/src/Base.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Base/src/Derived.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Student Reporter/Gui.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/stopWatch/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/XMLtest/src/john/xmlTest/XMLtestActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/eggbasket/src/Eggbasket.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Restart/res/layout/activity_main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Restart/res/values/strings.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Restart/res/values/styles.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Restart/src/com/JTW/restart/MainActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Restart/res/layout/activity_display_message.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Restart/src/com/JTW/restart/DisplayMessageActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Restart/src/com/JTW/restart/DisplayMessageActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/Restart/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Restart/src/com/JTW/restart/DisplayMessageActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Restart/res/layout/activity_main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/Restart/AndroidManifest.xml"/>
 </editors>
-<item historyLabel="StudentAction.java" index="4">
-<position/>
-</item>
-<item historyLabel="StudentFile.java" index="3">
-<position info="not_deleted" x="2334" y="0"/>
-</item>
-<item historyLabel="StudentAction.java" index="4">
-<position/>
-</item>
-<item historyLabel="StudentFile.java" index="3">
-<position info="not_deleted" x="218" y="0"/>
-</item>
-<item historyLabel="StudentAction.java" index="4">
-<position/>
-</item>
-<item historyLabel="StudentAction.java" index="4">
-<position/>
-</item>
-<item historyLabel="StudentAction.java" index="4">
-<position info="not_deleted" x="551" y="0"/>
-</item>
-<item historyLabel="StudentFile.java" index="3">
-<position info="not_deleted" x="218" y="0"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="2969" y="0"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="2845" y="0"/>
-</item>
-<item historyLabel="StudentAction.java" index="4">
-<position info="not_deleted" x="420" y="0"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="317" y="14"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="2559" y="4"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="875" y="0"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="1420" y="0"/>
-</item>
-<item historyLabel="Student.java" index="0">
-<position info="not_deleted" x="1257" y="0"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="1246" y="0"/>
-</item>
-<item historyLabel="Student.java" index="0">
-<position/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="2901" y="0"/>
-</item>
-<item historyLabel="StudentAction.java" index="4">
-<position info="not_deleted" x="7" y="26"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="2901" y="0"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="3754" y="53"/>
-</item>
-<item historyLabel="Student.java" index="0">
-<position info="not_deleted" x="3969" y="47"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="3659" y="0"/>
-</item>
-<item historyLabel="Student.java" index="0">
-<position info="not_deleted" x="4177" y="0"/>
-</item>
-<item historyLabel="StudentDemo.java" index="2">
-<position info="not_deleted" x="223" y="0"/>
-</item>
-<item historyLabel="Gui.java" index="1">
-<position info="not_deleted" x="5399" y="0"/>
-</item>
-<item historyLabel="Student.java" index="0">
-<position info="not_deleted" x="4271" y="0"/>
-</item>
-<item historyLabel="StudentDemo.java" index="2">
-<position info="not_deleted" x="223" y="0"/>
-</item>
-<item historyLabel="StudentFile.java" index="3">
-<position info="not_deleted" x="3022" y="0"/>
-</item>
-<item historyLabel="StudentAction.java" index="4">
-<position info="not_deleted" x="7" y="26"/>
-</item>
-<item historyLabel="StudentDemo.java" index="2">
-<position info="not_deleted" x="27" y="0"/>
-</item>
-<item historyLabel="StudentAction.java" index="4">
-<position info="not_deleted" x="141" y="0"/>
-</item>
-<item historyLabel="StudentDemo.java" index="2">
-<position info="not_deleted" x="27" y="0"/>
-</item>
-<item historyLabel="StudentFile.java" index="3">
-<position info="not_deleted" x="3022" y="0"/>
-</item>
-<item historyLabel="StudentDemo.java" index="5">
-<position info="not_deleted" x="27" y="0"/>
-</item>
-<item historyLabel="Student.java" index="6">
-<position info="not_deleted" x="4271" y="0"/>
-</item>
-<item historyLabel="Base.java" index="7">
-<position info="not_deleted" x="186" y="0"/>
-</item>
-<item historyLabel="Derived.java" index="8">
-<position info="not_deleted" x="312" y="0"/>
-</item>
-<item historyLabel="Base.java" index="7">
-<position info="not_deleted" x="186" y="0"/>
-</item>
-<item historyLabel="Derived.java" index="8">
-<position info="not_deleted" x="178" y="0"/>
-</item>
-<item historyLabel="Base.java" index="7">
-<position info="not_deleted" x="186" y="0"/>
-</item>
-<item historyLabel="Derived.java" index="8">
-<position info="not_deleted" x="178" y="0"/>
-</item>
-<item historyLabel="Base.java" index="7">
-<position info="not_deleted" x="186" y="0"/>
-</item>
-<item historyLabel="Derived.java" index="8">
-<position info="not_deleted" x="178" y="0"/>
-</item>
-<item historyLabel="Base.java" index="7">
-<position info="not_deleted" x="186" y="0"/>
-</item>
-<item historyLabel="Derived.java" index="8">
-<position info="not_deleted" x="178" y="0"/>
-</item>
-<item historyLabel="Base.java" index="7">
-<position info="not_deleted" x="186" y="0"/>
-</item>
-<item historyLabel="Gui.java" index="9">
+<item historyLabel="StudentDemo.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="Gui.java" index="9">
-<position info="not_deleted" x="1804" y="0"/>
+<item historyLabel="Student.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.xml" index="2"/>
+<item historyLabel="XMLtestActivity.java" index="3">
+<position info="not_deleted" x="1344" y="0"/>
+</item>
+<item historyLabel="main.xml" index="2"/>
+<item historyLabel="Eggbasket.java" index="4">
+<position info="not_deleted" x="48" y="9"/>
+</item>
+<item historyLabel="main.xml" index="2"/>
+<item historyLabel="Eggbasket.java" index="4">
+<position info="not_deleted" x="588" y="0"/>
+</item>
+<item historyLabel="activity_main.xml" index="5"/>
+<item historyLabel="strings.xml" index="6"/>
+<item historyLabel="styles.xml" index="7"/>
+<item historyLabel="strings.xml" index="6"/>
+<item historyLabel="activity_main.xml" index="5"/>
+<item historyLabel="strings.xml" index="6"/>
+<item historyLabel="activity_main.xml" index="5"/>
+<item historyLabel="strings.xml" index="6"/>
+<item historyLabel="activity_main.xml" index="5"/>
+<item historyLabel="MainActivity.java" index="8">
+<position info="not_deleted" x="614" y="0"/>
+</item>
+<item historyLabel="activity_main.xml" index="5"/>
+<item historyLabel="strings.xml" index="6"/>
+<item historyLabel="activity_main.xml" index="5"/>
+<item historyLabel="MainActivity.java" index="8">
+<position info="not_deleted" x="614" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="8">
+<position info="not_deleted" x="784" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="8">
+<position info="not_deleted" x="1069" y="0"/>
+</item>
+<item historyLabel="activity_display_message.xml" index="9"/>
+<item historyLabel="DisplayMessageActivity.java" index="10">
+<position info="not_deleted" x="511" y="0"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="10">
+<position info="not_deleted" x="733" y="0"/>
+</item>
+<item historyLabel="activity_display_message.xml" index="9"/>
+<item historyLabel="DisplayMessageActivity.java" index="10">
+<position info="not_deleted" x="733" y="0"/>
+</item>
+<item historyLabel="activity_display_message.xml" index="9"/>
+<item historyLabel="strings.xml" index="6"/>
+<item historyLabel="MainActivity.java" index="8">
+<position info="not_deleted" x="1069" y="0"/>
+</item>
+<item historyLabel="activity_main.xml" index="5"/>
+<item historyLabel="MainActivity.java" index="8">
+<position info="not_deleted" x="1069" y="0"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="11">
+<position info="not_deleted" x="733" y="0"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="11">
+<position info="not_deleted" x="328" y="22"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="11">
+<position info="not_deleted" x="1824" y="0"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="11">
+<position info="not_deleted" x="702" y="0"/>
+</item>
+<item historyLabel="Restart Manifest" index="12"/>
+<item historyLabel="DisplayMessageActivity.java" index="13">
+<position info="not_deleted" x="702" y="0"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="13">
+<position info="not_deleted" x="8" y="0"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="13">
+<position info="not_deleted" x="959" y="14"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="13">
+<position info="not_deleted" x="756" y="0"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="13">
+<position info="not_deleted" x="1364" y="21"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="13">
+<position info="not_deleted" x="977" y="0"/>
+</item>
+<item historyLabel="DisplayMessageActivity.java" index="13">
+<position info="not_deleted" x="959" y="14"/>
+</item>
+<item historyLabel="activity_main.xml" index="14"/>
+<item historyLabel="AndroidManifest.xml" index="15"/>
+<item historyLabel="activity_main.xml" index="14"/>
+<item active="true" historyLabel="DisplayMessageActivity.java" index="13">
+<position info="not_deleted" x="735" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -516,26 +472,35 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Gui.java" tooltip="Student Reporter/Gui.java">
-<persistable path="/Student Reporter/Gui.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="Restart/AndroidManifest.xml">
+<persistable path="/Restart/AndroidManifest.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Derived.java" tooltip="Base/src/Derived.java">
-<persistable path="/Base/src/Derived.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DisplayMessageActivity.java" tooltip="Restart/src/com/JTW/restart/DisplayMessageActivity.java">
+<persistable path="/Restart/src/com/JTW/restart/DisplayMessageActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Base.java" tooltip="Base/src/Base.java">
-<persistable path="/Base/src/Base.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_display_message.xml" tooltip="Restart/res/layout/activity_display_message.xml">
+<persistable path="/Restart/res/layout/activity_display_message.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PerformAction.java" tooltip="Student Reporter/PerformAction.java">
-<persistable path="/Student Reporter/PerformAction.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="Restart/res/values/strings.xml">
+<persistable path="/Restart/res/values/strings.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClockTest.java" tooltip="Homework2/ClockTest.java">
-<persistable path="/Homework2/ClockTest.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="styles.xml" tooltip="Restart/res/values/styles.xml">
+<persistable path="/Restart/res/values/styles.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DialogDemo.java" tooltip="Dialogdemo/src/DialogDemo.java">
-<persistable path="/Dialogdemo/src/DialogDemo.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="Restart/src/com/JTW/restart/MainActivity.java">
+<persistable path="/Restart/src/com/JTW/restart/MainActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CustomDialog.java" tooltip="Dialogdemo/src/CustomDialog.java">
-<persistable path="/Dialogdemo/src/CustomDialog.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="Restart/res/layout/activity_main.xml">
+<persistable path="/Restart/res/layout/activity_main.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Eggbasket.java" tooltip="eggbasket/src/Eggbasket.java">
+<persistable path="/eggbasket/src/Eggbasket.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="XMLtestActivity.java" tooltip="XMLtest/src/john/xmlTest/XMLtestActivity.java">
+<persistable path="/XMLtest/src/john/xmlTest/XMLtestActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main.xml" tooltip="stopWatch/res/layout/main.xml">
+<persistable path="/stopWatch/res/layout/main.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StudentFile.java" tooltip="Student Reporter/StudentFile.java">
 <persistable path="/Student Reporter/StudentFile.java"/>
@@ -546,20 +511,11 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Student.java" tooltip="Student Reporter/Student.java">
 <persistable path="/Student Reporter/Student.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StudentDemo.java" tooltip="ClassProject/StudentDemo.java">
-<persistable path="/ClassProject/StudentDemo.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Gui.java" tooltip="Student Reporter/Gui.java">
+<persistable path="/Student Reporter/Gui.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Student.java" tooltip="ClassProject/Student.java">
-<persistable path="/ClassProject/Student.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Clock.java" tooltip="Lab7/Clock.java">
-<persistable path="/Lab7/Clock.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClockTest.java" tooltip="Lab7/ClockTest.java">
-<persistable path="/Lab7/ClockTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleArray.java" tooltip="Lab7/SimpleArray.java">
-<persistable path="/Lab7/SimpleArray.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Derived.java" tooltip="Base/src/Derived.java">
+<persistable path="/Base/src/Derived.java"/>
 </file>
 </mruList>
 </workbench>

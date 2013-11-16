@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 
 @SuppressWarnings("serial")
-public class StudentFile extends Student  {
+public class StudentFile extends Student  { // might not need to extend this object. 
 
 	private static final String EXT = ".srp"; // file extension for binary files
 	private static final String T_EXT = ".txt"; // file extension for text files

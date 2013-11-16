@@ -8,7 +8,7 @@ public class Eggbasket
 		String openMessage = "This program will ask how many baskets of eggs you have\nand how many eggs are in each basket and then\ngive you the total amount of eggs";
 		
 		// end of variable declaration
-		JOptionPane.showMessageDialog(null, openMessage); // show openmessage to user prompt for inout next
+		JOptionPane.showMessageDialog(null, openMessage); // show open message to user prompt for input next
 		
 		// input is done here
 		numberOfBaskets = Integer.parseInt(JOptionPane.showInputDialog(null, "How many baskets are there?"));

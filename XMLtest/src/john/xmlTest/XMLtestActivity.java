@@ -1,5 +1,5 @@
 package john.xmlTest; 
-/* just a comment either my computer is slow as balls or the emulator is fucking horrible
+/* 6/7/2012 just a comment either my computer is slow as balls or the emulator is fucking horrible
  * I can literally export the apk file and then install it on the device and then run it before
  * this piece of shit virtual device even boots. :( 
  * Seriously what a piece a shit. Actual advice from stack overflow: test it the way I did 
@@ -27,13 +27,13 @@ public class XMLtestActivity extends Activity {
         Button exit;
         exit = (Button)findViewById(R.id.exit); // explained below
         
-        /* most of the items below were copied from googles android tutorial 
+        /* 6/7/2012 most of the items below were copied from googles android tutorial 
          * "http://developer.android.com/resources/tutorials/localization/index.html"
          * I have adapted the code to my own purposes but it still does a similar thing 
          * 
          * R.<object>.<id> is generated automatically from an XML file which points to resources 
          * The R object allows the Activity (main method) to reference resources without
-         * defining them through paths and whatnot in the class itself. 
+         * defining them through paths and what not in the class itself. 
          * For example  the variable exit is a button to be displayed and/or touch/clicked on but in order for it to be used
          * The compiler needs to know where it is on the display. That is what the XML and subsequently the R object is for.
          *  
@@ -42,7 +42,7 @@ public class XMLtestActivity extends Activity {
          * and images are displayed and stuff), and R.string which can hold string values to be referenced 
         	
         	Basically what line 18 is doing is telling the system to look within the R.id object and find exit then 
-        	associate thispart of the display to the button. So that exit is the button on the screen which was defined 
+        	associate this part of the display to the button. So that exit is the button on the screen which was defined 
         	by the XML file. 
         	Fucking complicated this android stuff is. 
         */
@@ -67,7 +67,7 @@ public class XMLtestActivity extends Activity {
             }  // had the original finish method here but it caused a windowLeaked exception it is fixed now.
         });
         // jesus christ this is hard to read. spent 5 minutes trying to figure out I didn't copy everything right
-        // and missed a parenthesis to end the method call. Ask teacher about this may have tips. 
+        // and missed a parenthesis to end the method call. 
     }
 }  
 
